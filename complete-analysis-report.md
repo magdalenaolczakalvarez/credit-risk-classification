@@ -1,36 +1,15 @@
-# Module 21: Credit Risk Analysis Report
+Overview of the Analysis
+The primary objective of this analysis was to develop a machine learning model capable of accurately predicting the risk associated with loans. Specifically, we aimed to distinguish between "healthy" loans, which are likely to be repaid, and "high-risk" loans, which have a significant chance of default. This differentiation is crucial for financial institutions to manage risk effectively, allocate resources efficiently, and ultimately, safeguard their financial stability.
 
-## Overview of the Analysis
+The dataset for this analysis comprised various financial metrics derived from loan applications and borrowers' financial histories. The key piece of information we needed to predict was the loan_status, which was categorized as 0 (healthy loan) or 1 (high-risk loan). This binary classification allowed us to focus on identifying patterns and characteristics that differentiate high-risk loans from healthy ones.
 
-This work aims to employ various techniques to train and evaluate a model's ability to predict the credit risk of borrowers. Historical lending transactions (77,536 data entries) from a peer-to-peer lending services company were used as input into building this model. The csv data imported includes the below column headers, which were used as variables:
-
-Loan size
-Interest rate on the loan
-Borrower's income
-Debt_to_Income ratio
-Number of accounts held by the borrower
-Derogatory remarks on the borrower's credit report
-Total debt
-Loan status (with '1' indicating credit default, and '0' representing a performing loan)
-
-The value_counts function reveals that, of the 77,356 loans from the raw data, approximately 3.23% (2,500) are non-performing loans (defaults)
-
-* The stages of the machine learning process for this analysis.
-
-The input data is contained in a CSV file which was read from a 'Resources' folder into a Pandas DataFrame. The data was separated into labels (loan_status) and features (Loan size,Interest rate on the loan,Borrower's income,Debt_to_Income ratio,Number of accounts held by the borrower,Derogatory remarks on the borrower's credit report,and Total debt). The data was then split into training and testing data with the standard 75/25 split. 
-
-## Results
+The target variable, loan_status, indicates whether a loan is considered healthy (0) or high-risk (1), with value counts initially reflecting an imbalanced distribution favoring healthy loans. The dataset also included several features relevant to assessing loan risk, such as: loan_size, interest_rate, borrower_income, debt_to_income,num_of_accounts, num_of_accounts, derogatory_marks, total_debt. 
 
 
-According to scikit-learn.org, the accuracy_score function computes the accuracy of correct predictions.The model's accuracy score of approximately 99.18% reveals its reliability in reasonably predicting the credit worthiness of potential borrowers. However, according to Klein (2022), the 'accuracy' measure is not always an adequate performance measure, and the confusion matrix helps make it easy for us to see what kind of confusions occur in our classification algorithms. 
-Going by the confusion matrix, we see that the model predicted 18,663 performing loans ('0') correctly, in contrast with the actual of 18,765 (18663 + 102) performing loans, approximately 99% accurate predictions of '0' (performing loans), with a significant precision score of 1. The model also predicted a total of 563 defaults('1') in contrast with the actual of 619 (563 + 56), approximately 91% accurate prediction of '1' (non-performing loans or defaults), with a 0.85 precision score.
+Results
+Machine Learning Model 1: Logistic Regression with Original Data
+Accuracy: The model demonstrated a high accuracy, suggesting it performs well on the overall dataset.
+Precision: For healthy loans (0), precision was nearly perfect, indicating a very low false positive rate. For high-risk loans (1), precision was lower, reflecting some false positives but still at a good level.
+Recall: For healthy loans, recall was exceptionally high, showing the model's effectiveness in identifying true negatives. For high-risk loans, recall was also impressive, indicating strong capability in detecting true positives among potential defaults.
 
-
-
-## References:
-
-https://scikit-learn.org/stable/modules/model_evaluation.html#:~:text=3.3.-,2.2.,function%20returns%20the%20subset%20accuracy.
-
-https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.RandomOverSampler.html
-
-Klein, B. (July 5, 2022), Confusion matrix in machine learning, retrieved from python-course.eu: https://python-course.eu/machine-learning/confusion-matrix-in-machine-learning.php
+Model (Original Data) demonstrated high accuracy, precision, and recall overall. It performed exceptionally well in identifying healthy loans (label 0) but was slightly less precise in identifying high-risk loans (label 1), though it still showed strong recall for these
