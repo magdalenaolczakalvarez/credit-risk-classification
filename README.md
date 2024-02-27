@@ -22,7 +22,7 @@ Split the Data into Training and Testing Sets
 
 PLEASE NOTE (Create a Logistic Regression Model with the Original Data
 
-Predict a Logistic Regression Model with Resampled Training Data ) - Due to not covering this part in class, instructor Mr. Elis removed this part of the assignment. 
+Predict a Logistic Regression Model with Resampled Training Data ) - Due to not covering this part in class, instructor Mr. Ellis removed this part of the assignment. 
 
 Write a Credit Risk Analysis Report
 
