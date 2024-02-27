@@ -7,7 +7,7 @@ The target variable, loan_status, indicates whether a loan is considered healthy
 
 
 Results
-Machine Learning Model 1: Logistic Regression with Original Data
+Machine Learning Model : Logistic Regression with Original Data
 Accuracy: The model demonstrated a high accuracy, suggesting it performs well on the overall dataset.
 Precision: For healthy loans (0), precision was nearly perfect, indicating a very low false positive rate. For high-risk loans (1), precision was lower, reflecting some false positives but still at a good level.
 Recall: For healthy loans, recall was exceptionally high, showing the model's effectiveness in identifying true negatives. For high-risk loans, recall was also impressive, indicating strong capability in detecting true positives among potential defaults.
