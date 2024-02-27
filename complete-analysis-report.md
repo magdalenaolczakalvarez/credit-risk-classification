@@ -12,4 +12,4 @@ Accuracy: The model demonstrated a high accuracy, suggesting it performs well on
 Precision: For healthy loans (0), precision was nearly perfect, indicating a very low false positive rate. For high-risk loans (1), precision was lower, reflecting some false positives but still at a good level.
 Recall: For healthy loans, recall was exceptionally high, showing the model's effectiveness in identifying true negatives. For high-risk loans, recall was also impressive, indicating strong capability in detecting true positives among potential defaults.
 
-Model (Original Data) demonstrated high accuracy, precision, and recall overall. It performed exceptionally well in identifying healthy loans (label 0) but was slightly less precise in identifying high-risk loans (label 1), though it still showed strong recall for these
+Model (Original Data) demonstrated high accuracy, precision, and recall overall. It performed exceptionally well in identifying healthy loans (label 0) but was slightly less precise in identifying high-risk loans (label 1), though it still showed strong recall for these.
