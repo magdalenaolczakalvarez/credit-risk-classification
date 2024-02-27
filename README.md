@@ -20,9 +20,9 @@ The instructions for this Challenge are divided into the following subsections:
 
 Split the Data into Training and Testing Sets
 
-Create a Logistic Regression Model with the Original Data
+PLEASE NOTE (Create a Logistic Regression Model with the Original Data
 
-Predict a Logistic Regression Model with Resampled Training Data
+Predict a Logistic Regression Model with Resampled Training Data ) - Due to not covering this part in class, instructor Mr. Elis removed this part of the assignment. 
 
 Write a Credit Risk Analysis Report
 
