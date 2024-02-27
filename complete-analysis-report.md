@@ -1,4 +1,4 @@
-# Module 21: Credit Risk Analysis Report By Chika Okam
+# Module 21: Credit Risk Analysis Report
 
 ## Overview of the Analysis
 
